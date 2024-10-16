@@ -1,0 +1,18 @@
+DATALOADER:
+  TRAIN_X:
+    BATCH_SIZE: 16
+  NUM_WORKERS: 8
+
+INPUT:
+  SIZE: (512, 512)
+  INTERPOLATION: "bicubic"
+  PIXEL_MEAN: [0.5, 0.5, 0.5]
+  PIXEL_STD: [0.5, 0.5, 0.5]
+  TRANSFORMS: ["normalize"]
+
+MODEL:
+  NAME: "sd"
+  CONFIG: "/path/to/transagent/configs/stable-diffusion/v1-inference.yaml"
+  CKPT: "/path/to/sd-v1-4.ckpt"
+  LLM_TEMPLATE: True
+  ENSEMBLE_TEMPLATE: False
