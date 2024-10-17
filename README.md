@@ -1,6 +1,6 @@
 # TransAgent
 
-> [**TransAgent: Transfer Vision-Language Foundation Models with Heterogeneous Agent Collaboration**]()<br>
+> [**TransAgent: Transfer Vision-Language Foundation Models with Heterogeneous Agent Collaboration**](https://arxiv.org/abs/2410.12183)<br>
 > [Yiwei Guo](https://github.com/markywg), [Shaobin Zhuang](https://scholar.google.com/citations?user=PGaDirMAAAAJ&hl=zh-CN&oi=ao), [Kunchang Li](https://scholar.google.com/citations?user=D4tLSbsAAAAJ), [Yu Qiao](https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl), [Yali Wang](https://scholar.google.com/citations?user=hD948dkAAAAJ).
 
 
@@ -52,7 +52,12 @@ Refer to the [TRAIN.md](docs/TRAIN.md) for detailed instructions on training and
 If you find this repository useful in your research, please use the following BibTeX entry for citation:
 
 ```latex
-
+@article{guo2024transagent,
+  title={TransAgent: Transfer Vision-Language Foundation Models with Heterogeneous Agent Collaboration},
+  author={Yiwei Guo, Shaobin Zhuang, Kunchang Li, Yu Qiao, Yali Wang},
+  journal={Advances in neural information processing systems},
+  year={2024}
+}
 ```
 
 

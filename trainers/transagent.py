@@ -599,26 +599,26 @@ class TransAgent(TrainerX):
         self.teacher_mae = vit_base(patch_size=16, num_classes=0)
         self.teacher_mae.to(self.device, self.dtype)
         self.teacher_mae.eval()
-        load_experts(self.teacher_mae, "/home/ywguo/ckpt/MAE/mae_pretrain_vit_base.pth", model_name="mae")
+        load_experts(self.teacher_mae, "/path/to/mae_pretrain_vit_base.pth", model_name="mae")
         print("Model mae built.")
 
         self.teacher_dino = vit_base(patch_size=16, num_classes=0)
         self.teacher_dino.to(self.device, self.dtype)
         self.teacher_dino.eval()
-        load_experts(self.teacher_dino, "/home/ywguo/ckpt/DINO/dino_vitbase16_pretrain.pth",
+        load_experts(self.teacher_dino, "/path/to/dino_vitbase16_pretrain.pth",
                      model_name="dino")
         print("Model dino built.")
 
         self.teacher_sam = sam_vit_base()
         self.teacher_sam.to(self.device, self.dtype)
         self.teacher_sam.eval()
-        load_experts(self.teacher_sam, "/home/ywguo/ckpt/SAM/sam_vit_b.pth", model_name="sam")
+        load_experts(self.teacher_sam, "/path/to/sam_vit_b.pth", model_name="sam")
         print("Model sam built.")
 
         self.teacher_vitdet = vitdet_base(patch_size=16, num_classes=0)
         self.teacher_vitdet.to(self.device, self.dtype)
         self.teacher_vitdet.eval()
-        load_experts(self.teacher_vitdet, "/home/ywguo/ckpt/ViTDet/model_final_61ccd1.pkl",
+        load_experts(self.teacher_vitdet, "/path/to/model_final_61ccd1.pkl",
                      model_name="vitdet")
         print("Model vitdet built.")
 
